@@ -1,66 +1,79 @@
-🧠 Bash Battle Arena
-A terminal-based Linux scripting game designed to sharpen your command-line skills through a series of creative, hands-on challenges. Fight your way through increasingly difficult levels — from basic file manipulation to scripting logic — and become a terminal warrior.
+# 🧠 Bash Battle Arena
 
-📜 How to Play
-Clone the repo:
+A terminal-based Bash scripting game built to sharpen your Linux skills through hands-on, level-based challenges.  
+Fight your way through increasingly difficult missions — from basic file manipulation to scripting logic — and become a **terminal warrior**.
 
-bash
-Copy
-Edit
+---
+
+## 📜 How to Play
+
+### **1. Clone the repo:**
+
 git clone https://github.com/Yasinhirsi/bash-battle-arena.git
 cd bash-battle-arena
-Start the game:
 
-bash
-Copy
-Edit
+### ••2. Launch the game:••
 bash main.sh
-Complete each level by writing your own scripts and verifying your solution using the built-in checker.
-
-🧪 Levels Overview
-Level	Focus
-1	Create & move files
-2	Copying files
-3	Conditional file checking
-4	Renaming files
-5	Multi-directory manipulation
-6	Argument handling in scripts
-7	Sorting files by size
-8	Searching through multiple files
-9	Monitoring directory changes
-10	Boss Battle: multi-step logic
-
-📁 Folder Structure
-levels/ — All checker scripts
-
-lessons/ — Mission briefings per level
-
-solutions/ — (Optional) Example solution scripts (can be removed)
-
-Arena_Boss/, Backup/, etc. — Used by levels for testing logic
-
-📸 Screenshots
-
-Menu Screen:
-
-<img width="668" alt="Menu" src="https://github.com/user-attachments/assets/cd79934b-5eaa-44f4-8461-e03fbce4364e" />
 
 
-  
-Boss Battle 2 Checks!
+## 🧪 Levels Overview
 
-<img width="1440" alt="Screenshot 2025-07-02 at 01 20 39" src="https://github.com/user-attachments/assets/c781ba4c-4f34-4702-9f3d-faaa48a3b8b3" />
+| Level | Focus                            |
+| ----- | -------------------------------- |
+| 1     | Create & move files              |
+| 2     | Copying files                    |
+| 3     | Conditional file checking        |
+| 4     | Renaming files                   |
+| 5     | Multi-directory manipulation     |
+| 6     | Argument handling in scripts     |
+| 7     | Sorting files by size            |
+| 8     | Searching through multiple files |
+| 9     | Monitoring directory changes     |
+| 10    | 🧠 Boss Battle: multi-step logic |
+
+
+## 📁 Folder Structure
+
+levels/ — Checker scripts for each level
+
+lessons/ — Mission briefings and instructions
+
+solutions/ — (Optional) Example solution scripts (remove this if you're submitting for practice)
+
+Arena_Boss/, Backup/, etc. — Used by levels for scripted environments
+
+
+## 📸 Screenshots
+
+Main Menu:
+
+
+Boss Battle 2 Output:
+
+
+## ✅ Features
+
+💻 No dependencies — pure Bash
+
+🐧 Works on macOS & Linux
+
+🎯 Built for real-world Bash practice
+
+🧩 Built-in level checkers
+
+
+## 📦 Coming Soon
+
+Levels 11–15
+
+🐉 Boss Battle 3
+
+
+## 🛡️ Contribute
+
+Found a bug or have a level idea? PRs and suggestions welcome.
 
 
 
 
-✅ Features
-No dependencies — pure Bash
 
-Works on macOS & Linux
-
-Teaches real-world Bash practices
-
-📦 Coming Soon
-Levels 11 - 15
-Boss Battle 3!

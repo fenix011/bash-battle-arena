@@ -41,11 +41,18 @@ Arena_Boss/, Backup/, etc. — Used by levels for testing logic
 
 📸 Screenshots
 
-(<img width="1440" alt="Screenshot 2025-07-02 at 01 20 39" src="https://github.com/user-attachments/assets/c781ba4c-4f34-4702-9f3d-faaa48a3b8b3" />)
+Menu Screen:
+
+<img width="668" alt="Menu" src="https://github.com/user-attachments/assets/cd79934b-5eaa-44f4-8461-e03fbce4364e" />
+
+
+  
+Boss Battle 2 Checks!
+
+<img width="1440" alt="Screenshot 2025-07-02 at 01 20 39" src="https://github.com/user-attachments/assets/c781ba4c-4f34-4702-9f3d-faaa48a3b8b3" />
 
 
 
-(Add your best screenshots in a /screenshots folder)
 
 ✅ Features
 No dependencies — pure Bash

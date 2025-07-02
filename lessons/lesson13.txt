@@ -1,0 +1,4 @@
+Lesson 13: Backup rotation
+
+- cp -r source backup_dir
+- Keep last 5 backups using ls and rm

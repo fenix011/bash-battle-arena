@@ -1,0 +1,4 @@
+Lesson 3: Conditional statements
+
+- if [ -f file ]; then ... fi
+- test command: [ condition ]

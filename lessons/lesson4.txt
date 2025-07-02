@@ -1,0 +1,4 @@
+Lesson 4: File manipulation
+
+- cp: copy files
+- globs: *.txt matches all .txt files

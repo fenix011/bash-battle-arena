@@ -1,0 +1,3 @@
+Lesson 12: Parsing config files
+
+- while IFS='=' read -r key val; do echo $key=$val; done < file

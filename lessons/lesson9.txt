@@ -1,0 +1,3 @@
+Lesson 9: Monitoring directory changes
+
+- Use inotifywait or monitor timestamps

@@ -1,0 +1,4 @@
+Lesson 11: Disk usage monitoring
+
+- df -h .
+- Use arithmetic comparisons with usage thresholds

@@ -1,0 +1,3 @@
+Lesson 7: Sorting files by size
+
+- du -b *.txt | sort -n

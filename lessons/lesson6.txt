@@ -1,0 +1,4 @@
+Lesson 6: Argument parsing
+
+- $1: first argument
+- if [ -z "$1" ]; then echo 'No argument'; fi

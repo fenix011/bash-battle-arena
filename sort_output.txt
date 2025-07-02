@@ -1,0 +1,7 @@
+a.txt - 6 bytes
+b.txt - 12 bytes
+testfilelevel6.txt - 15 bytes
+c.txt - 32 bytes
+output.txt - 34 bytes
+snapshot_new.txt - 124 bytes
+snapshot.txt - 182 bytes

@@ -1,0 +1,6 @@
+Lesson 1: Basics of directories and files
+
+Commands: mkdir, touch, ls
+- mkdir: create directories
+- touch: create files
+- ls: list directory contents

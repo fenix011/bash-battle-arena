@@ -1,0 +1,5 @@
+Lesson 2: Variables and Loops
+
+Variables store values.
+Loops repeat commands — useful for counting, automation, and scripting tasks.
+

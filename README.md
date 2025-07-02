@@ -13,8 +13,22 @@ git clone https://github.com/Yasinhirsi/bash-battle-arena.git
 
 cd bash-battle-arena
 
-### ••2. Launch the game:••
+### **2. Launch the game:**
 bash main.sh
+
+###  **3. Dual-Terminal Gameplay:**
+Some levels require multiple terminal windows. For example:
+
+Run main.sh in Terminal 1
+
+Run your level script (e.g., ./monitor_changes.sh test_dir) in Terminal 2
+
+Perform actions in Terminal 3 if needed (e.g., editing files)
+
+Then return to Terminal 1 and type check
+
+
+
 
 
 ## 🧪 Levels Overview

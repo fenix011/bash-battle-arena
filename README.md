@@ -10,6 +10,7 @@ Fight your way through increasingly difficult missions — from basic file manip
 ### **1. Clone the repo:**
 
 git clone https://github.com/Yasinhirsi/bash-battle-arena.git
+
 cd bash-battle-arena
 
 ### ••2. Launch the game:••

@@ -1,4 +1,4 @@
-Lesson 8: Searching files
+Lección 8: Buscar en archivos
 
-- grep 'pattern' file
+- grep 'patrón' archivo
 - for f in *.log; do grep ...; done

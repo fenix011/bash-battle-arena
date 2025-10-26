@@ -1,4 +1,4 @@
-Lesson 6: Argument parsing
+Lección 6: Análisis de argumentos
 
-- $1: first argument
-- if [ -z "$1" ]; then echo 'No argument'; fi
+- $1: primer argumento
+- if [ -z "$1" ]; then echo 'Sin argumento'; fi

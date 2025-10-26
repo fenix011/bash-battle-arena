@@ -33,26 +33,26 @@ ______   _______  _______
 EOF
 }
 
-# --- Main Menu Loop ---
+# --- Bucle del Menú Principal ---
 while true; do
   show_ascii_art
   echo ""
-  echo "Select a level (1–15) or enter 'q' to quit:"
-  echo "  q - Quit the game"
+  echo "Selecciona un nivel (1–15) o escribe 'q' para salir:"
+  echo "  q - Salir del juego"
   for i in {1..15}; do
-    echo "  Level $i - $(head -1 lessons/lesson$i.txt)"
+    echo "  Nivel $i - $(head -1 lessons/lesson$i.txt)"
   done
   echo ""
-  read -p "Enter level number (or 'q' to quit): " level
+  read -p "Ingresa el número de nivel (o 'q' para salir): " level
   echo ""
 
   if [[ "$level" == "q" || "$level" == "Q" ]]; then
-    echo "Exiting game. Goodbye!"
+    echo "Saliendo del juego. ¡Adiós!"
     break
   elif [[ "$level" =~ ^[1-9]$|^1[0-5]$ ]]; then
     ./levels/level$level.sh
   else
-    echo "❌ Invalid input. Please enter 1–15 or 'q' to quit."
+    echo "❌ Entrada inválida. Por favor ingresa 1–15 o 'q' para salir."
     sleep 1.5
   fi
 done

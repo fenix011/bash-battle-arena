@@ -1,3 +1,3 @@
-Lesson 9: Monitoring directory changes
+Lección 9: Monitorear cambios en directorios
 
-- Use inotifywait or monitor timestamps
+- Usa inotifywait o monitorea marcas de tiempo

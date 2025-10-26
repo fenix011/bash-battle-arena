@@ -1,62 +1,60 @@
 #!/bin/bash
 clear
 
-# --- INSTRUCTIONS ---
+# --- INSTRUCCIONES ---
 echo
-echo "📚 LEVEL 3: Conditionals"
+echo "📚 NIVEL 3: Condicionales"
 echo
-echo "🎯 Mission:"
-echo "1. Write a script named 'hero_check.sh'"
-echo "2. It should check whether the file 'Arena/hero.txt' exists"
-echo "3. If it does, print: Hero found!"
-echo "4. If it doesn't, print: Hero missing!"
+echo "🎯 Misión:"
+echo "1. Escribe un script llamado 'hero_check.sh'"
+echo "2. Debe verificar si el archivo 'Arena/hero.txt' existe"
+echo "3. Si existe, imprime: Hero found!"
+echo "4. Si no existe, imprime: Hero missing!"
 echo
-echo "🧱 Prerequisites:"
-echo "- The file must be named exactly: hero_check.sh"
-echo "- The script must check for 'Arena/hero.txt'"
-echo "- It must output exactly one of the two messages"
+echo "🧱 Prerrequisitos:"
+echo "- El archivo debe llamarse exactamente: hero_check.sh"
+echo "- El script debe verificar 'Arena/hero.txt'"
+echo "- Debe mostrar exactamente uno de los dos mensajes"
 echo
-echo "🖥️ How to complete:"
-echo "1. Create a new Bash script"
-echo "2. Use an if-statement to check if the file exists"
-echo "3. Use echo to print the correct message"
-echo "4. Type: check (in this window) when ready"
+echo "🖥️ Cómo completarlo:"
+echo "1. Crea un nuevo script Bash"
+echo "2. Usa una declaración if para verificar si el archivo existe"
+echo "3. Usa echo para imprimir el mensaje correcto"
+echo "4. Escribe: check (en esta ventana) cuando esté listo"
 echo
 
-# --- CHECK LOOP ---
+# --- BUCLE DE VERIFICACIÓN ---
 while true; do
-  read -p $'\nType "check" to verify your solution or "exit" to quit: ' input
+  read -p $'\nEscribe "check" para verificar tu solución o "exit" para salir: ' input
   case $input in
     check)
       if [[ -f hero_check.sh ]]; then
         output=$(bash hero_check.sh 2>&1)
 
         if [[ "$output" == "Hero found!" || "$output" == "Hero missing!" ]]; then
-          echo "✅ Output accepted: $output"
+          echo "✅ Salida aceptada: $output"
           break
         else
-          echo "❌ Incorrect output."
+          echo "❌ Salida incorrecta."
           echo
-          echo "Your Output:"
+          echo "Tu salida:"
           echo "$output"
           echo
-          echo "Expected Output:"
-          echo "'Hero found!' or 'Hero missing!'"
+          echo "Salida esperada:"
+          echo "'Hero found!' o 'Hero missing!'"
         fi
       else
-        echo "❌ Missing hero_check.sh. Please write your solution script and save it as 
-hero_check.sh"
+        echo "❌ Falta hero_check.sh. Por favor escribe tu script de solución y guárdalo como hero_check.sh"
       fi
       ;;
     exit)
-      echo "Exiting Level 3..."
+      echo "Saliendo del Nivel 3..."
       break
       ;;
     *)
-      echo "Invalid input. Please type 'check' or 'exit'."
+      echo "Entrada inválida. Por favor escribe 'check' o 'exit'."
       ;;
   esac
 done
 
-read -p "Press Enter to return to menu..."
-
+read -p "Presiona Enter para volver al menú..."

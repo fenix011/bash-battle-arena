@@ -1,3 +1,3 @@
-Lesson 14: Menus with select/case
+Lección 14: Menús con select/case
 
-- select choice in opt1 opt2; do case $choice in ...; done
+- select opcion in opc1 opc2; do case $opcion in ...; done

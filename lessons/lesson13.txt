@@ -1,4 +1,4 @@
-Lesson 13: Backup rotation
+Lección 13: Rotación de respaldos
 
-- cp -r source backup_dir
-- Keep last 5 backups using ls and rm
+- cp -r origen directorio_respaldo
+- Mantén los últimos 5 respaldos usando ls y rm

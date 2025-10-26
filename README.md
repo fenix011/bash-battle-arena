@@ -1,95 +1,95 @@
 # 🧠 Bash Battle Arena
 
-A terminal-based Bash scripting game built to sharpen your Linux skills through hands-on, level-based challenges.  
-Fight your way through increasingly difficult missions — from basic file manipulation to scripting logic — and become a **terminal warrior**.
+Un juego de scripting en Bash basado en terminal, diseñado para mejorar tus habilidades en Linux a través de desafíos prácticos por niveles.
+Avanza a través de misiones cada vez más difíciles — desde manipulación básica de archivos hasta lógica de scripting — y conviértete en un **guerrero de la terminal**.
 
 ---
 
-## 📜 How to Play
+## 📜 Cómo Jugar
 
-### **1. Clone the repo:**
+### **1. Clona el repositorio:**
 
 git clone https://github.com/Yasinhirsi/bash-battle-arena.git
 
 cd bash-battle-arena
 
-### **2. Launch the game:**
+### **2. Inicia el juego:**
 bash main.sh
 
-###  **3. Dual-Terminal Gameplay:**
-Some levels require multiple terminal windows. For example:
+###  **3. Juego con Terminales Duales:**
+Algunos niveles requieren múltiples ventanas de terminal. Por ejemplo:
 
-Run main.sh in Terminal 1
+Ejecuta main.sh en la Terminal 1
 
-Run your level script (e.g., ./monitor_changes.sh test_dir) in Terminal 2
+Ejecuta tu script de nivel (ej., ./monitor_changes.sh test_dir) en la Terminal 2
 
-Perform actions in Terminal 3 if needed (e.g., editing files)
+Realiza acciones en la Terminal 3 si es necesario (ej., editar archivos)
 
-Then return to Terminal 1 and type check
-
-
+Luego regresa a la Terminal 1 y escribe check
 
 
 
-## 🧪 Levels Overview
-
-| Level | Focus                            |
-| ----- | -------------------------------- |
-| 1     | Create & move files              |
-| 2     | Copying files                    |
-| 3     | Conditional file checking        |
-| 4     | Renaming files                   |
-| 5     | Multi-directory manipulation     |
-| 6     | Argument handling in scripts     |
-| 7     | Sorting files by size            |
-| 8     | Searching through multiple files |
-| 9     | Monitoring directory changes     |
-| 10    | 🧠 Boss Battle: multi-step logic |
 
 
-## 📁 Folder Structure
+## 🧪 Descripción de Niveles
 
-levels/ — Checker scripts for each level
+| Nivel | Enfoque                                     |
+| ----- | ------------------------------------------- |
+| 1     | Crear y mover archivos                      |
+| 2     | Copiar archivos                             |
+| 3     | Verificación condicional de archivos        |
+| 4     | Renombrar archivos                          |
+| 5     | Manipulación de múltiples directorios       |
+| 6     | Manejo de argumentos en scripts             |
+| 7     | Ordenar archivos por tamaño                 |
+| 8     | Buscar en múltiples archivos                |
+| 9     | Monitorear cambios en directorios           |
+| 10    | 🧠 Batalla Final: lógica de múltiples pasos |
 
-lessons/ — Mission briefings and instructions
 
-solutions/ — (Optional) Example solution scripts (remove this if you're submitting for practice)
+## 📁 Estructura de Carpetas
 
-Arena_Boss/, Backup/, etc. — Used by levels for scripted environments
+levels/ — Scripts de verificación para cada nivel
+
+lessons/ — Instrucciones y misiones
+
+solutions/ — (Opcional) Scripts de solución de ejemplo (elimina esto si lo envías para práctica)
+
+Arena_Boss/, Backup/, etc. — Usados por los niveles para entornos de scripting
 
 
-## 📸 Screenshots
+## 📸 Capturas de Pantalla
 
-Main Menu:
+Menú Principal:
 
 <img width="668" alt="Menu" src="https://github.com/user-attachments/assets/f3f915d3-651b-48ab-8238-4257cf8bfaaa" />
 
 
-Boss Battle 2 Output:
+Resultado de Batalla Final 2:
 
 <img width="1440" alt="Screenshot 2025-07-02 at 01 20 39" src="https://github.com/user-attachments/assets/080e26b4-4338-418f-85b0-614e7eb80e77" />
 
-## ✅ Features
+## ✅ Características
 
-💻 No dependencies — pure Bash
+💻 Sin dependencias — puro Bash
 
-🐧 Works on macOS & Linux
+🐧 Funciona en macOS y Linux
 
-🎯 Built for real-world Bash practice
+🎯 Diseñado para práctica real de Bash
 
-🧩 Built-in level checkers
-
-
-## 📦 Coming Soon
-
-Levels 11–15
-
-🐉 Boss Battle 3
+🧩 Verificadores de nivel integrados
 
 
-## 🛡️ Contribute
+## 📦 Próximamente
 
-Found a bug or have a level idea? PRs and suggestions welcome.
+Niveles 11–15
+
+🐉 Batalla Final 3
+
+
+## 🛡️ Contribuir
+
+¿Encontraste un bug o tienes una idea para un nivel? Los PRs y sugerencias son bienvenidos.
 
 
 

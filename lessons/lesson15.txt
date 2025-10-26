@@ -1,3 +1,3 @@
-Lesson 15: Boss Battle 3 - Final menu system
+Lección 15: Batalla Final 3 - Sistema de menú final
 
-- Combine backup, uptime, disk usage, config parsing
+- Combina respaldo, uptime, uso de disco, análisis de configuración

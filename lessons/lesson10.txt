@@ -1,3 +1,3 @@
-Lesson 10: Boss Battle 2
+Lección 10: Batalla Final 2
 
-Combine: mkdir, touch, random content, sorting, grep, mv
+Combina: mkdir, touch, contenido aleatorio, ordenamiento, grep, mv

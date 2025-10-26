@@ -1,4 +1,4 @@
-Lesson 11: Disk usage monitoring
+Lección 11: Monitoreo de uso de disco
 
 - df -h .
-- Use arithmetic comparisons with usage thresholds
+- Usa comparaciones aritméticas con umbrales de uso

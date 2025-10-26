@@ -1,57 +1,56 @@
 #!/bin/bash
 clear
 
-# --- INSTRUCTIONS ---
+# --- INSTRUCCIONES ---
 echo
-echo "📚 LEVEL 4: File Manipulation"
+echo "📚 NIVEL 4: Manipulación de Archivos"
 echo
-echo "🎯 Mission:"
-echo "1. Copy all .txt files from the 'Arena' directory"
-echo "2. Paste them into a new directory called 'Backup'"
+echo "🎯 Misión:"
+echo "1. Copia todos los archivos .txt del directorio 'Arena'"
+echo "2. Pégalos en un nuevo directorio llamado 'Backup'"
 echo
-echo "🧱 Prerequisites:"
-echo "- The 'Arena' directory must already exist"
-echo "- Only .txt files inside 'Arena' should be copied"
-echo "- The 'Backup' directory must be created manually"
+echo "🧱 Prerrequisitos:"
+echo "- El directorio 'Arena' debe existir ya"
+echo "- Solo archivos .txt dentro de 'Arena' deben ser copiados"
+echo "- El directorio 'Backup' debe ser creado manualmente"
 echo
-echo "🖥️ How to complete:"
-echo "1. Use 'cp' with a wildcard to copy all .txt files"
-echo "2. Ensure the copied files are inside 'Backup/'"
-echo "3. You can open a second terminal window to work while this checker stays open"
-echo "4. If needed, delete the Backup directory using: rm -r Backup"
-echo "5. Type: check (in this window) when ready"
+echo "🖥️ Cómo completarlo:"
+echo "1. Usa 'cp' con un comodín para copiar todos los archivos .txt"
+echo "2. Asegúrate de que los archivos copiados estén dentro de 'Backup/'"
+echo "3. Puedes abrir una segunda ventana de terminal para trabajar mientras este verificador permanece abierto"
+echo "4. Si es necesario, elimina el directorio Backup usando: rm -r Backup"
+echo "5. Escribe: check (en esta ventana) cuando esté listo"
 echo
 
-# --- CHECK LOOP ---
+# --- BUCLE DE VERIFICACIÓN ---
 while true; do
-  read -p $'\nType "check" to verify your solution or "exit" to quit: ' input
+  read -p $'\nEscribe "check" para verificar tu solución o "exit" para salir: ' input
   case $input in
     check)
       if [[ ! -d Arena ]]; then
-        echo "❌ Arena directory does not exist. Please create it first."
+        echo "❌ El directorio Arena no existe. Por favor créalo primero."
         continue
       fi
 
       txt_count=$(find Arena -maxdepth 1 -name "*.txt" | wc -l)
 
       if [[ ! -d Backup ]]; then
-        echo "❌ Backup directory not found."
+        echo "❌ Directorio Backup no encontrado."
       elif [[ $(find Backup -maxdepth 1 -name "*.txt" | wc -l) -lt $txt_count ]]; then
-        echo "❌ Not all .txt files were copied to Backup. Check your cp command."
+        echo "❌ No todos los archivos .txt fueron copiados a Backup. Verifica tu comando cp."
       else
-        echo "✅ All .txt files from Arena successfully copied to Backup!"
+        echo "✅ ¡Todos los archivos .txt de Arena fueron copiados exitosamente a Backup!"
         break
       fi
       ;;
     exit)
-      echo "Exiting Level 4..."
+      echo "Saliendo del Nivel 4..."
       break
       ;;
     *)
-      echo "Invalid input. Please type 'check' or 'exit'."
+      echo "Entrada inválida. Por favor escribe 'check' o 'exit'."
       ;;
   esac
 done
 
-read -p "Press Enter to return to menu..."
-
+read -p "Presiona Enter para volver al menú..."

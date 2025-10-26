@@ -1,4 +1,4 @@
-Lesson 3: Conditional statements
+Lección 3: Declaraciones condicionales
 
-- if [ -f file ]; then ... fi
-- test command: [ condition ]
+- if [ -f archivo ]; then ... fi
+- comando test: [ condición ]

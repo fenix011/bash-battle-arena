@@ -1,5 +1,4 @@
-Lesson 2: Variables and Loops
+Lección 2: Variables y Bucles
 
-Variables store values.
-Loops repeat commands — useful for counting, automation, and scripting tasks.
-
+Las variables almacenan valores.
+Los bucles repiten comandos — útiles para contar, automatización y tareas de scripting.

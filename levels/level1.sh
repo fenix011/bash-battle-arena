@@ -1,55 +1,55 @@
 #!/bin/bash
 clear
 
-# --- LESSON / INSTRUCTIONS ---
+# --- LECCIÓN / INSTRUCCIONES ---
 cat lessons/lesson1.txt
 echo
-echo "📚 LEVEL 1: Arena Setup"
+echo "📚 NIVEL 1: Configuración de Arena"
 echo
-echo "🎯 Mission:"
-echo "1. Create a directory named 'Arena'"
-echo "2. Inside it, create three files: warrior.txt, mage.txt, and archer.txt"
-echo "3. List the directory contents to confirm they're there"
+echo "🎯 Misión:"
+echo "1. Crea un directorio llamado 'Arena'"
+echo "2. Dentro de él, crea tres archivos: warrior.txt, mage.txt y archer.txt"
+echo "3. Lista el contenido del directorio para confirmar que están ahí"
 echo
-echo "🧱 Prerequisites:"
-echo "- You must name the directory exactly: Arena"
-echo "- Files must be placed inside the Arena directory"
-echo "- Your working directory should be this Bash Arena folder"
+echo "🧱 Prerrequisitos:"
+echo "- Debes nombrar el directorio exactamente: Arena"
+echo "- Los archivos deben estar dentro del directorio Arena"
+echo "- Tu directorio de trabajo debe ser esta carpeta Bash Arena"
 echo
-echo "🖥️ How to complete:"
-echo "1. Use terminal to create the directory and files"
-echo "2. Type: check (in this window) when ready"
+echo "🖥️ Cómo completarlo:"
+echo "1. Usa la terminal para crear el directorio y los archivos"
+echo "2. Escribe: check (en esta ventana) cuando esté listo"
 echo
 
-# --- CHECK LOOP ---
+# --- BUCLE DE VERIFICACIÓN ---
 while true; do
-  read -p $'\nType "check" to verify your solution or "exit" to quit: ' input
+  read -p $'\nEscribe "check" para verificar tu solución o "exit" para salir: ' input
   case $input in
     check)
       if [[ ! -d Arena ]]; then
-        echo "❌ Directory 'Arena' not found."
+        echo "❌ Directorio 'Arena' no encontrado."
       else
-        missing_files=()
-        [[ ! -f Arena/warrior.txt ]] && missing_files+=("warrior.txt")
-        [[ ! -f Arena/mage.txt ]] && missing_files+=("mage.txt")
-        [[ ! -f Arena/archer.txt ]] && missing_files+=("archer.txt")
+        missing_archivos=()
+        [[ ! -f Arena/warrior.txt ]] && missing_archivos+=("warrior.txt")
+        [[ ! -f Arena/mage.txt ]] && missing_archivos+=("mage.txt")
+        [[ ! -f Arena/archer.txt ]] && missing_archivos+=("archer.txt")
 
-        if [[ ${#missing_files[@]} -eq 0 ]]; then
-          echo "✅ Success! All required files are present in Arena."
+        if [[ ${#missing_archivos[@]} -eq 0 ]]; then
+          echo "✅ ¡Éxito! Todos los archivos requeridos están presentes en Arena."
           break
         else
-          echo "❌ Missing file(s) in Arena: ${missing_files[*]}"
+          echo "❌ Archivo(s) faltante(s) en Arena: ${missing_archivos[*]}"
         fi
       fi
       ;;
     exit)
-      echo "Exiting Level 1..."
+      echo "Saliendo del Nivel 1..."
       break
       ;;
     *)
-      echo "Invalid input. Please type 'check' or 'exit'."
+      echo "Entrada inválida. Por favor escribe 'check' o 'exit'."
       ;;
   esac
 done
 
-read -p "Press Enter to return to menu..."
+read -p "Presiona Enter para volver al menú..."

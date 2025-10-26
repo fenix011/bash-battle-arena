@@ -1,4 +1,4 @@
-Lesson 4: File manipulation
+Lección 4: Manipulación de archivos
 
-- cp: copy files
-- globs: *.txt matches all .txt files
+- cp: copiar archivos
+- globs: *.txt coincide con todos los archivos .txt

@@ -1,3 +1,3 @@
-Lesson 7: Sorting files by size
+Lección 7: Ordenar archivos por tamaño
 
 - du -b *.txt | sort -n

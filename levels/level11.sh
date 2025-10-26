@@ -4,7 +4,7 @@ cat lessons/lesson11.txt
 echo ""
 echo "Mission: [Insert mission instructions here for Level 11]"
 while true; do
-  read -p $'\nType "check" to verify your solution or "exit" to quit: ' input
+  read -p $'\nEscribe "check" para verificar tu solución o "exit" para salir: ' input
   case $input in
     check)
       echo "⚠️  Checker not yet implemented for Level 11."
@@ -13,8 +13,8 @@ while true; do
       break
       ;;
     *)
-      echo "Invalid input. Please type 'check' or 'exit'."
+      echo "Entrada inválida. Por favor escribe 'check' o 'exit'."
       ;;
   esac
 done
-read -p "Press Enter to return to menu..."
+read -p "Presiona Enter para volver al menú..."

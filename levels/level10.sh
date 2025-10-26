@@ -32,16 +32,16 @@ cat << "EOF"
 EOF
 
 echo
-echo "📚 LEVEL 10: Boss Battle 2 - Intermediate Scripting"
+echo "📚 NIVEL 10: Batalla Final 2 - Intermediate Scripting"
 echo
-echo "🎯 Mission:"
-echo "1. Create a directory called 'Arena_Boss'"
-echo "2. Inside it, create 5 files: file1.txt to file5.txt"
-echo "3. Each file should have a random number of lines (between 10 and 20)"
-echo "4. Sort the files by size and display the sorted list"
-echo "5. If any file contains the word 'Victory', move it to 'Victory_Archive'"
+echo "🎯 Misión:"
+echo "1. Crea un directorio called 'Arena_Boss'"
+echo "2. Dentro de él, create 5 archivos: archivo1.txt to archivo5.txt"
+echo "3. Each archivo should have a random number of lines (between 10 and 20)"
+echo "4. Sort the archivos by size and display the sorted list"
+echo "5. If any archivo contains the word 'Victory', move it to 'Victory_Archive'"
 echo
-echo "🧱 Prerequisites:"
+echo "🧱 Prerrequisitos:"
 echo "- Your script must be named: boss_battle2.sh"
 echo "- When you run this level, Arena_Boss and Victory_Archive are reset automatically"
 echo "- Type 'check' to verify your solution"
@@ -63,29 +63,29 @@ while true; do
       echo "🔍 Checking boss_battle2.sh results..."
       pass=true
 
-      file_count=$(find Arena_Boss Victory_Archive -maxdepth 1 -name "file*.txt" 2>/dev/null | 
+      archivo_count=$(find Arena_Boss Victory_Archive -maxdepth 1 -name "archivo*.txt" 2>/dev/null | 
 wc -l)
-      if [[ "$file_count" -ne 5 ]]; then
-        echo "❌ Expected 5 files across Arena_Boss and Victory_Archive but found $file_count"
+      if [[ "$archivo_count" -ne 5 ]]; then
+        echo "❌ Expected 5 archivos across Arena_Boss and Victory_Archive but found $archivo_count"
         pass=false
       fi
 
-      for file in Arena_Boss/file*.txt Victory_Archive/file*.txt; do
-        if [[ -f "$file" ]]; then
-          line_count=$(wc -l < "$file" | tr -d ' ')
+      for archivo in Arena_Boss/archivo*.txt Victory_Archive/archivo*.txt; do
+        if [[ -f "$archivo" ]]; then
+          line_count=$(wc -l < "$archivo" | tr -d ' ')
           if (( line_count < 10 || line_count > 20 )); then
-            echo "❌ $file has $line_count lines (expected 10–20)."
+            echo "❌ $archivo has $line_count lines (expected 10–20)."
             pass=false
           fi
         fi
       done
 
-      moved_files=$(find Victory_Archive -name "file*.txt")
-      if [[ -n "$moved_files" ]]; then
-        echo "✅ Moved files to Victory_Archive:"
-        echo "$moved_files"
+      moved_archivos=$(find Victory_Archive -name "archivo*.txt")
+      if [[ -n "$moved_archivos" ]]; then
+        echo "✅ Moved archivos to Victory_Archive:"
+        echo "$moved_archivos"
       else
-        echo "⚠️ No files were moved to Victory_Archive (maybe none had 'Victory')"
+        echo "⚠️ No archivos were moved to Victory_Archive (maybe none had 'Victory')"
       fi
 
       if $pass; then

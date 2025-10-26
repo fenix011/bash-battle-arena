@@ -1,6 +1,7 @@
 # 🧠 Bash Battle Arena
 
-Un juego de scripting en Bash basado en terminal, diseñado para mejorar tus habilidades en Linux a través de desafíos prácticos por niveles.
+Un juego de [scripting en Bash basado en terminal creado por Yasinhirsi](https://github.com/Yasinhirsi/bash-battle-arena), diseñado para mejorar tus habilidades en Linux a través
+de desafíos prácticos por niveles. En este repositorio puedes jugar en lengua hispana.
 Avanza a través de misiones cada vez más difíciles — desde manipulación básica de archivos hasta lógica de scripting — y conviértete en un **guerrero de la terminal**.
 
 ---
@@ -92,6 +93,4 @@ Niveles 11–15
 ¿Encontraste un bug o tienes una idea para un nivel? Los PRs y sugerencias son bienvenidos.
 
 
-
-
-
+[Guerrero](https://github.com/fenix011/bash-battle-arena/blob/main/bash-warrior+Tux2.png)

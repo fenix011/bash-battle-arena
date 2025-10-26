@@ -94,3 +94,7 @@ Niveles 11–15
 
 
 [Guerrero](https://github.com/fenix011/bash-battle-arena/blob/main/bash-warrior+Tux2.png)
+
+
+
+<img width="668" alt="Menu" src="https://raw.githubusercontent.com/fenix011/bash-battle-arena/refs/heads/main/bash-warrior%2BTux2.png" />

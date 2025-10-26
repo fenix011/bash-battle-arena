@@ -1,6 +1,6 @@
 # 🧠 Bash Battle Arena
 
-Un juego de [scripting en Bash basado en terminal creado por Yasinhirsi](https://github.com/Yasinhirsi/bash-battle-arena), diseñado para mejorar tus habilidades en Linux a través
+Un juego de [scripting en Bash basado en la terminal creado por Yasinhirsi](https://github.com/Yasinhirsi/bash-battle-arena), diseñado para mejorar tus habilidades en Linux a través
 de desafíos prácticos por niveles. En este repositorio puedes jugar en lengua hispana.
 Avanza a través de misiones cada vez más difíciles — desde manipulación básica de archivos hasta lógica de scripting — y conviértete en un **guerrero de la terminal**.
 
@@ -69,6 +69,9 @@ f5x :
 
 <img width="668" alt="Menu" src="https://raw.githubusercontent.com/fenix011/bash-battle-arena/refs/heads/main/menu.png" />
 
+f5x v2 :
+
+<img width="668" alt="Menu" src="menu.png" />
 
 
 Resultado de Batalla Final 2:

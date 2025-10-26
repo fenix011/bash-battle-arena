@@ -73,7 +73,7 @@ Resultado de Batalla Final 2:
 
 💻 Sin dependencias — puro Bash
 
-🐧 Funciona en macOS y Linux
+🐧 Funciona en WSL (Windows Subsystem for Linux), en macOS y en Linux ;-)
 
 🎯 Diseñado para práctica real de Bash
 

@@ -65,10 +65,20 @@ Menú Principal:
 
 <img width="668" alt="Menu" src="https://github.com/user-attachments/assets/f3f915d3-651b-48ab-8238-4257cf8bfaaa" />
 
+f5x :
+
+<img width="668" alt="Menu" src="https://raw.githubusercontent.com/fenix011/bash-battle-arena/refs/heads/main/menu.png" />
+
+
 
 Resultado de Batalla Final 2:
 
 <img width="1440" alt="Screenshot 2025-07-02 at 01 20 39" src="https://github.com/user-attachments/assets/080e26b4-4338-418f-85b0-614e7eb80e77" />
+
+f5x :
+
+<img width="668" alt="Menu" src="https://raw.githubusercontent.com/fenix011/bash-battle-arena/refs/heads/main/level2.png" />
+
 
 ## ✅ Características
 

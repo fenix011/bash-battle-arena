@@ -10,7 +10,7 @@ Avanza a través de misiones cada vez más difíciles — desde manipulación b�
 
 ### **1. Clona el repositorio:**
 
-git clone https://github.com/Yasinhirsi/bash-battle-arena.git
+git clone https://github.com/fp-bits/bash-battle-arena.git
 
 cd bash-battle-arena
 
@@ -63,13 +63,13 @@ Arena_Boss/, Backup/, etc. — Usados por los niveles para entornos de scripting
 
 Menú Principal:
 
-![Menu](https://raw.githubusercontent.com/fenix011/bash-battle-arena/main/menu.png)     
+![Menu](https://raw.githubusercontent.com/fp-bits/bash-battle-arena/main/menu.png)     
 
 
 Resultado de Batalla Final 2:
 
 
-![Nivel 2](https://raw.githubusercontent.com/fenix011/bash-battle-arena/main/level2.png)
+![Nivel 2](https://raw.githubusercontent.com/fp-bits/bash-battle-arena/main/level2.png)
 
 
 ## ✅ Características
@@ -95,8 +95,8 @@ Niveles 11–15
 ¿Encontraste un bug o tienes una idea para un nivel? Los PRs y sugerencias son bienvenidos.
 
 
-[Guerrero](https://github.com/fenix011/bash-battle-arena/blob/main/bash-warrior+Tux2.png)
+[Guerrero](https://github.com/fp-bits/bash-battle-arena/blob/main/bash-warrior+Tux2.png)
 
 
 
-<img width="668" alt="Menu" src="https://raw.githubusercontent.com/fenix011/bash-battle-arena/refs/heads/main/bash-warrior%2BTux2.png" />
+<img width="668" alt="Menu" src="https://raw.githubusercontent.com/fp-bits/bash-battle-arena/refs/heads/main/bash-warrior%2BTux2.png" />

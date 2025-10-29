@@ -41,7 +41,7 @@ while true; do
           echo "$output"
           echo
           echo "Salida esperada:"
-          echo "'Hero found!' o 'Hero missing!'"
+          echo "'Hero found!' o 'Hero missing!' (exactamente así, en inglés)"
         fi
       else
         echo "❌ Falta hero_check.sh. Por favor escribe tu script de solución y guárdalo como hero_check.sh"

@@ -30,84 +30,84 @@ ______   _______  _______  _______
  \____/  (_)   
 EOF
 
-# --- INSTRUCTIONS ---
+# --- INSTRUCCIONES ---
 echo
-echo "📚 LEVEL 5: Boss Battle 1 - Combine Concepts"
+echo "📚 NIVEL 5: Batalla Final 1 - Combinar Conceptos"
 echo
-echo "🎯 Mission:"
-echo "1. Create a directory named 'Battlefield'"
-echo "2. Inside it, create the files: knight.txt, sorcerer.txt, and rogue.txt"
-echo "3. Move 'knight.txt' into a new directory called 'Archive'"
-echo "4. (Optional) List contents of both directories to verify"
+echo "🎯 Misión:"
+echo "1. Crea un directorio llamado 'Battlefield'"
+echo "2. Dentro de él, crea los archivos: knight.txt, sorcerer.txt y rogue.txt"
+echo "3. Mueve 'knight.txt' a un nuevo directorio llamado 'Archive'"
+echo "4. (Opcional) Lista el contenido de ambos directorios para verificar"
 echo
-echo "🧱 Prerequisites:"
-echo "- 'Battlefield' directory must exist"
-echo "- 'sorcerer.txt' and 'rogue.txt' must remain in Battlefield"
-echo "- 'knight.txt' must be moved from Battlefield to Archive"
-echo "- You must manually create the 'Archive' directory before moving knight.txt"
-echo "- Archive must exist and contain knight.txt"
+echo "🧱 Prerrequisitos:"
+echo "- El directorio 'Battlefield' debe existir"
+echo "- 'sorcerer.txt' y 'rogue.txt' deben permanecer en Battlefield"
+echo "- 'knight.txt' debe ser movido de Battlefield a Archive"
+echo "- Debes crear manualmente el directorio 'Archive' antes de mover knight.txt"
+echo "- Archive debe existir y contener knight.txt"
 echo
-echo "🖥️ How to complete:"
-echo "1. Use 'mkdir' and 'touch' to create directories and files"
-echo "2. Use 'mv' to move knight.txt"
-echo "3. Note: The 'mv' command does NOT create folders — use 'mkdir Archive' first"
-echo "4. You can open a second terminal to work while this stays open"
-echo "5. If needed, reset with: rm -r Battlefield Archive"
-echo "6. Type: check (in this window) when ready"
+echo "🖥️ Cómo completarlo:"
+echo "1. Usa 'mkdir' y 'touch' para crear directorios y archivos"
+echo "2. Usa 'mv' para mover knight.txt"
+echo "3. Nota: El comando 'mv' NO crea carpetas — usa 'mkdir Archive' primero"
+echo "4. Puedes abrir una segunda terminal para trabajar mientras esta permanece abierta"
+echo "5. Si es necesario, reinicia con: rm -r Battlefield Archive"
+echo "6. Escribe: check (en esta ventana) cuando esté listo"
 echo
 
-# --- CHECK LOOP ---
+# --- BUCLE DE VERIFICACIÓN ---
 while true; do
-  read -p $'\nType "check" to verify your solution or "exit" to quit: ' input
+  read -p $'\nEscribe "check" para verificar tu solución o "exit" para salir: ' input
   case $input in
     check)
       success=true
 
       if [[ ! -d Battlefield ]]; then
-        echo "❌ Battlefield directory not found."
+        echo "❌ Directorio Battlefield no encontrado."
         success=false
       fi
 
       if [[ ! -f Battlefield/sorcerer.txt ]]; then
-        echo "❌ sorcerer.txt not found in Battlefield."
+        echo "❌ sorcerer.txt no encontrado en Battlefield."
         success=false
       fi
 
       if [[ ! -f Battlefield/rogue.txt ]]; then
-        echo "❌ rogue.txt not found in Battlefield."
+        echo "❌ rogue.txt no encontrado en Battlefield."
         success=false
       fi
 
       if [[ -f Battlefield/knight.txt ]]; then
-        echo "❌ knight.txt should have been moved from Battlefield."
+        echo "❌ knight.txt debería haber sido movido de Battlefield."
         success=false
       fi
 
       if [[ ! -d Archive ]]; then
-        echo "❌ Archive directory not found."
+        echo "❌ Directorio Archive no encontrado."
         success=false
       fi
 
       if [[ ! -f Archive/knight.txt ]]; then
-        echo "❌ knight.txt not found in Archive."
+        echo "❌ knight.txt no encontrado en Archive."
         success=false
       fi
 
       if [[ "$success" == true ]]; then
-        echo "✅ Boss Battle 1 complete! All checks passed."
+        echo "✅ ¡Batalla Final 1 completada! Todas las verificaciones pasaron."
         break
       else
-        echo -e "\n⚠️ One or more checks failed. Run your boss1.sh script again and retry."
+        echo -e "\n⚠️ Una o más verificaciones fallaron. Ejecuta tu script boss1.sh nuevamente e intenta de nuevo."
       fi
       ;;
     exit)
-      echo "Exiting Level 5..."
+      echo "Saliendo del Nivel 5..."
       break
       ;;
     *)
-      echo "Invalid input. Please type 'check' or 'exit'."
+      echo "Entrada inválida. Por favor escribe 'check' o 'exit'."
       ;;
   esac
 done
 
-read -p "Press Enter to return to menu..."
+read -p "Presiona Enter para volver al menú..."

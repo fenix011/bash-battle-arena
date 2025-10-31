@@ -32,41 +32,41 @@ cat << "EOF"
 EOF
 
 echo
-echo "📚 NIVEL 10: Batalla Final 2 - Intermediate Scripting"
+echo "📚 NIVEL 10: Batalla Final 2 - Scripting Intermedio"
 echo
 echo "🎯 Misión:"
-echo "1. Crea un directorio called 'Arena_Boss'"
-echo "2. Dentro de él, create 5 archivos: archivo1.txt to archivo5.txt"
-echo "3. Each archivo should have a random number of lines (between 10 and 20)"
-echo "4. Sort the archivos by size and display the sorted list"
-echo "5. If any archivo contains the word 'Victory', move it to 'Victory_Archive'"
+echo "1. Crea un directorio llamado 'Arena_Boss'"
+echo "2. Dentro de él, crea 5 archivos: archivo1.txt a archivo5.txt"
+echo "3. Cada archivo debe tener un número aleatorio de líneas (entre 10 y 20)"
+echo "4. Ordena los archivos por tamaño y muestra la lista ordenada"
+echo "5. Si algún archivo contiene la palabra 'Victory', muévelo a 'Victory_Archive'"
 echo
 echo "🧱 Prerrequisitos:"
-echo "- Your script must be named: boss_battle2.sh"
-echo "- When you run this level, Arena_Boss and Victory_Archive are reset automatically"
-echo "- Type 'check' to verify your solution"
-echo "- Type 'reset' to reset the folders manually"
-echo "- Press ENTER to return to the main menu after completion"
+echo "- Tu script debe llamarse: boss_battle2.sh"
+echo "- Cuando ejecutes este nivel, Arena_Boss y Victory_Archive se reinician automáticamente"
+echo "- Escribe 'check' para verificar tu solución"
+echo "- Escribe 'reset' para reiniciar las carpetas manualmente"
+echo "- Presiona ENTER para volver al menú principal después de completar"
 echo
 
 # Auto-reset folders
 rm -rf Arena_Boss Victory_Archive
 mkdir Arena_Boss Victory_Archive
 
-echo "♻️  Folders reset. Please re-run your boss_battle2.sh script now."
+echo "♻️  Carpetas reiniciadas. Por favor vuelve a ejecutar tu script boss_battle2.sh ahora."
 echo
 
 while true; do
   read -rp "> " input
   case $input in
     check)
-      echo "🔍 Checking boss_battle2.sh results..."
+      echo "🔍 Verificando resultados de boss_battle2.sh..."
       pass=true
 
-      archivo_count=$(find Arena_Boss Victory_Archive -maxdepth 1 -name "archivo*.txt" 2>/dev/null | 
+      archivo_count=$(find Arena_Boss Victory_Archive -maxdepth 1 -name "archivo*.txt" 2>/dev/null |
 wc -l)
       if [[ "$archivo_count" -ne 5 ]]; then
-        echo "❌ Expected 5 archivos across Arena_Boss and Victory_Archive but found $archivo_count"
+        echo "❌ Se esperaban 5 archivos entre Arena_Boss y Victory_Archive pero se encontraron $archivo_count"
         pass=false
       fi
 
@@ -74,7 +74,7 @@ wc -l)
         if [[ -f "$archivo" ]]; then
           line_count=$(wc -l < "$archivo" | tr -d ' ')
           if (( line_count < 10 || line_count > 20 )); then
-            echo "❌ $archivo has $line_count lines (expected 10–20)."
+            echo "❌ $archivo tiene $line_count líneas (se esperaban 10–20)."
             pass=false
           fi
         fi
@@ -82,34 +82,34 @@ wc -l)
 
       moved_archivos=$(find Victory_Archive -name "archivo*.txt")
       if [[ -n "$moved_archivos" ]]; then
-        echo "✅ Moved archivos to Victory_Archive:"
+        echo "✅ Archivos movidos a Victory_Archive:"
         echo "$moved_archivos"
       else
-        echo "⚠️ No archivos were moved to Victory_Archive (maybe none had 'Victory')"
+        echo "⚠️ No se movieron archivos a Victory_Archive (quizás ninguno tenía 'Victory')"
       fi
 
       if $pass; then
-        echo "✅ Level 10 complete!"
+        echo "✅ ¡Nivel 10 completado!"
         echo
-        echo "👉 You can type 'reset' to try again"
-        echo "or just press ENTER to return to the main menu."
+        echo "👉 Puedes escribir 'reset' para intentar de nuevo"
+        echo "o simplemente presiona ENTER para volver al menú principal."
       else
-        echo "❌ Level 10 not yet complete. Fix the issues and try again."
+        echo "❌ Nivel 10 aún no completado. Corrige los problemas e intenta de nuevo."
       fi
       ;;
     reset)
-      echo "♻️  Resetting folders..."
+      echo "♻️  Reiniciando carpetas..."
       rm -rf Arena_Boss Victory_Archive
       mkdir Arena_Boss Victory_Archive
-      echo "✅ Reset complete. Re-run your boss_battle2.sh script and type 'check' again."
+      echo "✅ Reinicio completado. Vuelve a ejecutar tu script boss_battle2.sh y escribe 'check' de nuevo."
       ;;
     "")
       echo
-      read -rp "Press ENTER to return to the main menu..."
+      read -rp "Presiona ENTER para volver al menú principal..."
       break
       ;;
     *)
-      echo "Invalid input. Type 'check', 'reset', or press ENTER to quit."
+      echo "Entrada inválida. Escribe 'check', 'reset', o presiona ENTER para salir."
       ;;
   esac
 done

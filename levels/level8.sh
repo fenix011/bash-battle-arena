@@ -7,36 +7,36 @@ echo "📚 NIVEL 8: Búsqueda en Archivos"
 echo
 echo "🎯 Misión:"
 echo "1. Crea un script llamado 'search_logs.sh'"
-echo "2. Debe accept one argument: a word or phrase to search for"
-echo "3. Search through all .log archivos in the current directorio"
-echo "4. Print only the names of archivos that contain the search word"
+echo "2. Debe aceptar un argumento: una palabra o frase a buscar"
+echo "3. Busca en todos los archivos .log del directorio actual"
+echo "4. Imprime solo los nombres de los archivos que contienen la palabra buscada"
 echo
 echo "🧱 Prerrequisitos:"
-echo "- The script must be llamado exactly: search_logs.sh"
-echo "- Output should list only matching archivonames, one per line"
-echo "- Sin espacios en blanco extra or archivo contents should be printed"
-echo "- Output must be sorted (optional but ensures consistency)"
+echo "- El script debe llamarse exactamente: search_logs.sh"
+echo "- La salida debe listar solo los nombres de archivos coincidentes, uno por línea"
+echo "- No deben imprimirse espacios en blanco extra ni contenido de archivos"
+echo "- La salida debe estar ordenada (opcional pero asegura consistencia)"
 echo
 echo "🖥️ Cómo completarlo:"
-echo "1. Crea un script named: search_logs.sh"
-echo "2. Your script must accept one argument — a word to search for"
-echo "3. Debe search for that word inside all '.log' archivos in the current directorio"
-echo "4. For every .log archivo that contains the word, print ONLY the archivoname (one per line)"
-echo "   - Do NOT print the matched line or any extra text"
+echo "1. Crea un script llamado: search_logs.sh"
+echo "2. Tu script debe aceptar un argumento — una palabra a buscar"
+echo "3. Debe buscar esa palabra dentro de todos los archivos '.log' del directorio actual"
+echo "4. Por cada archivo .log que contenga la palabra, imprime SOLO el nombre del archivo (uno por línea)"
+echo "   - NO imprimas la línea coincidente ni ningún texto extra"
 echo
-echo "🔧 Example:"
+echo "🔧 Ejemplo:"
 echo "   ./search_logs.sh error"
 echo
-echo "📂 About the test archivos:"
-echo "• You do NOT need to create your own .log archivos."
-echo "• When you type 'check', this level will automatically create test .log archivos for you."
-echo "• These archivos will contain a mix of logs with and without the word 'error'."
-echo "• Your script should detect which archivos contain 'error' and print just their names."
+echo "📂 Acerca de los archivos de prueba:"
+echo "• NO necesitas crear tus propios archivos .log."
+echo "• Cuando escribas 'check', este nivel creará automáticamente archivos .log de prueba para ti."
+echo "• Estos archivos contendrán una mezcla de logs con y sin la palabra 'error'."
+echo "• Tu script debe detectar qué archivos contienen 'error' e imprimir solo sus nombres."
 echo
-echo "🧹 To clear all test logs and start fresh, run:"
+echo "🧹 Para limpiar todos los logs de prueba y empezar de nuevo, ejecuta:"
 echo "   rm -f *.log"
 echo
-echo "✅ When you're ready, type: check (en esta ventana)"
+echo "✅ Cuando estés listo, escribe: check (en esta ventana)"
 echo
 
 # --- BUCLE DE VERIFICACIÓN ---
@@ -50,7 +50,7 @@ while true; do
       ;;
     check)
       echo
-      echo "🔍 Preparing test environment..."
+      echo "🔍 Preparando entorno de prueba..."
 
       # Cleanup any old log archivos
       rm -f *.log
@@ -62,7 +62,7 @@ while true; do
       echo "Critical error detected." > test3.log
 
       # Run user script with 'error' as argument
-      echo "Running: ./search_logs.sh error"
+      echo "Ejecutando: ./search_logs.sh error"
       output=$(bash ./search_logs.sh error 2>/dev/null | sed 's/ *$//' | sort)
 
       # Expected output (sorted)
@@ -70,14 +70,14 @@ while true; do
 
       if [[ "$output" == "$expected" ]]; then
         echo
-        echo "✅ ¡Éxito! Your script correctly found matching archivos."
+        echo "✅ ¡Éxito! Tu script encontró correctamente los archivos coincidentes."
         echo
-        echo "🔎 Search term used: 'error'"
+        echo "🔎 Término de búsqueda usado: 'error'"
         echo
-        echo "📂 Matching archivos:"
+        echo "📂 Archivos coincidentes:"
         echo "$output"
         echo
-        echo "📄 Example matches:"
+        echo "📄 Ejemplos de coincidencias:"
         for archivo in $output; do
           match=$(grep -i 'error' "$archivo" | head -1)
           echo "- $archivo: $match"
@@ -86,17 +86,17 @@ while true; do
       else
         echo "❌ Salida incorrecta."
         echo
-        echo "Expected:"
+        echo "Esperado:"
         echo "$expected"
         echo
         echo "Tu salida:"
         echo "$output"
         echo
-        echo "💡 Tip: Print only the archivonames (not contents), one per line, no extra spaces."
+        echo "💡 Consejo: Imprime solo los nombres de archivo (no el contenido), uno por línea, sin espacios extra."
       fi
       ;;
     *)
-      echo "Entrada inválida. Por favor escribe 'check' to verify your solution or 'exit' to quit."
+      echo "Entrada inválida. Por favor escribe 'check' para verificar tu solución o 'exit' para salir."
       ;;
   esac
 done

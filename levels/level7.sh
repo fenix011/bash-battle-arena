@@ -3,29 +3,28 @@ clear
 
 # --- INSTRUCCIONES ---
 echo
-echo "📚 NIVEL 7: Sorting Archivos by Size"
+echo "📚 NIVEL 7: Ordenar Archivos por Tamaño"
 echo
 echo "🎯 Misión:"
-echo "1. Scan all .txt archivos in the current directorio"
-echo "2. Sort them by size (smallest to largest)"
-echo "3. Output the result to a archivo called: sort_output.txt"
-echo "4. Each line must follow this format: archivoname - SIZE bytes"
+echo "1. Escanea todos los archivos .txt en el directorio actual"
+echo "2. Ordénalos por tamaño (del más pequeño al más grande)"
+echo "3. Guarda el resultado en un archivo llamado: sort_output.txt"
+echo "4. Cada línea debe seguir este formato: nombrearchivo - TAMAÑO bytes"
 echo
 echo "🧱 Prerrequisitos:"
-echo "- All .txt archivos must be scanned (excluding sort_output.txt itself)"
-echo "- Output must be sorted numerically by size"
-echo "- Output must be saved in a archivo named: sort_output.txt"
-echo "- Output lines must look exactly like: example.txt - 42 bytes"
+echo "- Todos los archivos .txt deben ser escaneados (excluyendo sort_output.txt)"
+echo "- La salida debe estar ordenada numéricamente por tamaño"
+echo "- La salida debe guardarse en un archivo llamado: sort_output.txt"
+echo "- Las líneas de salida deben verse exactamente así: ejemplo.txt - 42 bytes"
 echo
 echo "🖥️ Cómo completarlo:"
-echo "1. Create and save your script as sort_txt_by_size.sh"
-echo "2. Use 'stat' or 'wc -c' to get archivo sizes"
-echo "   • macOS users: stat -f%z archivoname"
-echo "   • Linux users: stat -c%s archivoname"
-echo "3. Use 'sort -k3 -n' to sort by size"
+echo "1. Crea y guarda tu script como sort_txt_by_size.sh"
+echo "2. Usa 'stat' o 'wc -c' para obtener los tamaños de archivo"
+echo "   • Usuarios de macOS: stat -f%z nombrearchivo"
+echo "   • Usuarios de Linux: stat -c%s nombrearchivo"
+echo "3. Usa 'sort -k3 -n' para ordenar por tamaño"
 echo "4. Escribe: check (en esta ventana) cuando estés listo"
-echo "⚠️ Important: If you create or change any .txt archivos, you must re-run your script before 
-checking!"
+echo "⚠️ Importante: Si creas o modificas algún archivo .txt, debes volver a ejecutar tu script antes de verificar!"
 echo
 
 # --- BUCLE DE VERIFICACIÓN ---
@@ -39,11 +38,11 @@ while true; do
       ;;
     check)
       echo
-      echo "🔍 Checking sort_output.txt..."
+      echo "🔍 Verificando sort_output.txt..."
       output_archivo="sort_output.txt"
 
       if [[ ! -f "$output_archivo" ]]; then
-        echo "❌ '$output_archivo' no encontrado. Run your script before checking."
+        echo "❌ '$output_archivo' no encontrado. Ejecuta tu script antes de verificar."
         continue
       fi
 
@@ -69,15 +68,15 @@ while true; do
       actual=$(cat "$output_archivo" | sed '/^$/d')
 
       if [[ "$expected_sorted" == "$actual" ]]; then
-        echo "✅ ¡Éxito! Your output is correct and sorted."
+        echo "✅ ¡Éxito! Tu salida es correcta y está ordenada."
         break
       else
-        echo "❌ Incorrect output in $output_archivo. Here's the difference:"
+        echo "❌ Salida incorrecta en $output_archivo. Aquí está la diferencia:"
         diff <(echo "$expected_sorted") <(echo "$actual")
       fi
       ;;
     *)
-      echo "Entrada inválida. Por favor escribe 'check' to verify your solution or 'exit' to quit."
+      echo "Entrada inválida. Por favor escribe 'check' para verificar tu solución o 'exit' para salir."
       ;;
   esac
 done
